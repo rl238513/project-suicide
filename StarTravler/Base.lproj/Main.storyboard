@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" title="Star Travler Inc." id="Ylw-Sh-8r7"/>
                     <connections>
                         <outlet property="locationLabel" destination="szb-7w-G9a" id="I5U-Dy-oW0"/>
-                        <segue destination="5zh-OR-cIB" kind="show" identifier="Seque" id="ooQ-Cr-lw1"/>
+                        <segue destination="5zh-OR-cIB" kind="show" identifier="Segue" id="ooQ-Cr-lw1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
