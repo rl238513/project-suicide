@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var isGoingToRedDwarf = Bool()
+    
     @IBOutlet weak var locationLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +19,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rDwarf(_ sender: Any) {
-        performSegue(withIdentifier: "showStarViewController", sender: nil)
+        isGoingToRedDwarf = true
+        performSegue(withIdentifier: "Segue", sender: nil)
     }
     
     @IBAction func bDwarf(_ sender: Any) {
-        performSegue(withIdentifier: "showStarViewController", sender: nil)
+        isGoingToRedDwarf = false
+        performSegue(withIdentifier: "Segue", sender: nil)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! StarViewController
+        nvc.isGoingToRedDwarfPassed = isGoingToRedDwarf
+    }
     
     
 }

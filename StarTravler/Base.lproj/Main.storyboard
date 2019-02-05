@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" title="Star Travler Inc." id="Ylw-Sh-8r7"/>
                     <connections>
                         <outlet property="locationLabel" destination="szb-7w-G9a" id="I5U-Dy-oW0"/>
-                        <segue destination="5zh-OR-cIB" kind="show" identifier="showStarViewController" id="ooQ-Cr-lw1"/>
+                        <segue destination="5zh-OR-cIB" kind="show" identifier="Seque" id="ooQ-Cr-lw1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,11 +82,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="home"/>
+                                <connections>
+                                    <action selector="home:" destination="5zh-OR-cIB" eventType="touchUpInside" id="Kq5-sw-rB7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EsL-xP-77y"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="hCJ-xp-H28" id="4Wx-L8-NIq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVG-Eu-kyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
