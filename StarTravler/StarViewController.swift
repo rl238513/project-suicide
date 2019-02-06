@@ -11,8 +11,8 @@ import UIKit
 class StarViewController: UIViewController {
 
     var isGoingToRedDwarfPassed = Bool()
-    var redArray = [UIImage(named: "redDwarf1"), UIImage(named: "redDwarf2"), UIImage(named: "redDwarf3")]
-    var blueArray = [UIImage(named: "blueDwarf1"), UIImage(named: "blueDwarf2"), UIImage(named: "blueDwarf3")]
+    var redArray = [UIImage(named: "RedDwarf1"), UIImage(named: "RedDwarf2"), UIImage(named: "RedDwarf3")]
+    var blueArray = [UIImage(named: "BlueDwarf1"), UIImage(named: "BlueDwarf2"), UIImage(named: "BlueDwarf3")]
     
     @IBOutlet weak var imageView: UIImageView!
     
